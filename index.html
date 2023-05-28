@@ -13,17 +13,17 @@
   <div class="form-container">
     <div>
       <label for="input-email">Email</label>
-      <input type="email" id="input-email" oninput="onInputChange('input-email')" />
+      <input type="email" id="input-email" placeholder="seunome@email.com.br" oninput="onInputChange('input-email')" />
       <span id="email-warning" class="error-message">Por favor, insira um email válido</span>
     </div>
     <div>
       <label for="input-telefone">Telefone</label>
-      <input type="text" id="input-telefone" oninput="onInputChange('input-telefone')" maxlength="16"/>
-      <span id="telefone-warning" class="error-message">Formato válido +xx(xx)xxxxxxxxx</span>
+      <input type="text" id="input-telefone" oninput="onInputChange('input-telefone')" placeholder="+xx(xx)xxxxxxxxx" maxlength="16"/>
+      <span id="telefone-warning" class="error-message">Por favor, insira um telefone válido </span>
     </div>
     <div>
       <label for="input-cpf">CPF</label>
-      <input type="number" id="input-cpf" oninput="onInputChange('input-cpf')" maxlength="11"/>
+      <input type="number" id="input-cpf" oninput="onInputChange('input-cpf')" placeholder="00000000000" maxlength="11"/>
       <span id="cpf-warning" class="error-message">Por favor, insira um CPF válido</span>
     </div>
   </div>
