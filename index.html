@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/91ab540396.js" crossorigin="anonymous"></script>
+  <title>Gerador de QR Code</title>
+</head>
+<body>
+  <h1>Gerador de QR Code</h1>
+  <div class="form-container">
+    <div>
+      <label for="input-email">Email</label>
+      <input type="email" id="input-email" oninput="onInputChange('input-email')" />
+      <span id="email-warning" class="error-message">Por favor, insira um email válido</span>
+    </div>
+    <div>
+      <label for="input-telefone">Telefone</label>
+      <input type="text" id="input-telefone" oninput="onInputChange('input-telefone')" maxlength="16"/>
+      <span id="telefone-warning" class="error-message">Formato válido +xx(xx)xxxxxxxxx</span>
+    </div>
+    <div>
+      <label for="input-cpf">CPF</label>
+      <input type="number" id="input-cpf" oninput="onInputChange('input-cpf')" maxlength="11"/>
+      <span id="cpf-warning" class="error-message">Por favor, insira um CPF válido</span>
+    </div>
+  </div>
+  <div class="qrcode-container">
+    <div id="qrcode"></div>
+  </div>
+  <footer>
+  
+    <div class="footer-left">
+      <span>Por Bruno Souza</span>
+    </div>
+    <div class="footer-right">
+      <a href="https://www.instagram.com/bmsouza88/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/bruno-m-souza/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/BrunoSouza88" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:bmsouza88@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</body>
+</html>
+
